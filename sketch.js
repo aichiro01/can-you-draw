@@ -2,8 +2,6 @@ let gamestate = "title";
 
 let drawStart = false;
 
-let timeLimit = 240;
-
 let countDown;
 
 let goR;
@@ -55,8 +53,10 @@ function setup() {
 myButton.textFont = "monospace"; //Font of the text (string)
 
   myButton.onPress = function(){
-   gamestate = "lvl1";
+   gamestate = "info";
 }
+
+
 }
 
 function keyPressed(){
@@ -69,6 +69,9 @@ function draw() {
   switch (gamestate){
       case"title":
       titleScreen();
+      break;
+      case"info":
+      intro();
       break;
       case"lvl1":
       play();
@@ -124,6 +127,46 @@ function titleScreen() {
    ellipse(450, 480, 10, 15);
 }
 
+function intro() {
+  noStroke();
+   fill(58, 58, 58);
+   rect(10, 20, 485, 475);
+   fill(245, 245, 220);
+   strokeWeight(1);
+   rect(0, 0, 500, 40, 20);
+   rect(0, 460, 500, 40, 20);
+   rect(0, 0, 20, 500, 20);
+   rect(480, 0, 20, 500, 20);
+   stroke(255);
+   fill(255);
+
+   textSize(35);
+   textAlign(CENTER);
+   text('Info:', width*0.5, height*0.18);
+
+
+
+
+   fill(0, 255, 0);
+   ellipse(400, 480, 20, 20);
+   fill(245, 245, 220);
+   stroke(1);
+   ellipse(450, 480, 30, 30);
+   fill(58, 58, 58);
+   ellipse(450, 480, 10, 15);
+
+   myButton.width = 90;
+   myButton.height = 70;
+   myButton.locate(380, 380);
+   myButton.text = "Skip";
+   myButton.color = "#00FF00";
+   myButton.textSize = 30;
+   myButton.textFont = "monospace";
+   myButton.onPress = function(){
+    gamestate = "lvl1";
+ }
+}
+
 function play() {
 
   noStroke();
@@ -153,25 +196,22 @@ image(pic0,45, 200);
   text('Can you Draw:', width*0.5, height*0.2);
   textSize(20);
   text('Hydrant', width*0.5, height*0.3);
-  textSize(10);
-  text('You will only have 60 seconds per drawing', width*0.5, height*0.89);
-
 
   if (drawStart == false){
-    background(255, 255, 255);
+    background(255,255,255);
     drawStart = true;
   }
+  myButton.width = 90;
+  myButton.height = 70;
+  myButton.locate(380, 380);
+  myButton.text = "Skip";
+  myButton.color = "#00FF00";
+  myButton.textSize = 30;
+  myButton.textFont = "monospace";
+  myButton.onPress = function(){
+   gamestate = "lvl2";
+}
 
-  let currentTime = int(millis()/ 1000);
-  countDown = timeLimit - currentTime;
-  textSize(10);
-  text("TIMER: " + countDown, 100, 400);
-
-  if (countDown < 180){
-    countDown = 0;{
-      gamestate = 'lvl2';}
-    }
-  myButton.locate(-190, -350);
 }
 
 function play1() {
@@ -200,27 +240,23 @@ image(pic1,45, 200);
   fill(255, 255, 255);
   textAlign(CENTER);
   textSize(25);
-  text('Draw what is shown below', width*0.5, height*0.2);
-  textSize(12);
-  text('Clear canvas each drawing by pressing "C"', width*0.5, height*0.35);
-  textSize(10);
-  text('You will only have 60 seconds per drawing', width*0.5, height*0.89);
+
 
   if (drawStart == false){
     background(255, 255, 255);
     drawStart = true;
   }
 
-  let currentTime = int(millis()/ 1000);
-  countDown = timeLimit - currentTime;
-  textSize(10);
-  text("TIMER: " + countDown, 100, 400);
-
-  if (countDown < 120){
-    countDown = 0;{
-      gamestate = 'lvl3';}
-    }
-  myButton.locate(-190, -350);
+  myButton.width = 90;
+  myButton.height = 70;
+  myButton.locate(380, 380);
+  myButton.text = "Skip";
+  myButton.color = "#00FF00";
+  myButton.textSize = 30;
+  myButton.textFont = "monospace";
+  myButton.onPress = function(){
+   gamestate = "lvl3";
+}
 }
 
 function play2() {
@@ -250,27 +286,22 @@ image(pic2,45, 200);
   fill(255, 255, 255);
   textAlign(CENTER);
   textSize(25);
-  text('Draw what is shown below', width*0.5, height*0.2);
-  textSize(12);
-  text('Clear canvas each drawing by pressing "C"', width*0.5, height*0.35);
-  textSize(10);
-  text('You will only have 60 seconds per drawing', width*0.5, height*0.89);
+
 
   if (drawStart == false){
     background(255, 255, 255);
     drawStart = true;
   }
-
-  let currentTime = int(millis()/ 1000);
-  countDown = timeLimit - currentTime;
-  textSize(10);
-  text("TIMER: " + countDown, 100, 400);
-
-  if (countDown < 60){
-    countDown = 0;{
-      gamestate = 'lvl4';}
-    }
-  myButton.locate(-190, -350);
+  myButton.width = 90;
+  myButton.height = 70;
+  myButton.locate(380, 380);
+  myButton.text = "Skip";
+  myButton.color = "#00FF00";
+  myButton.textSize = 30;
+  myButton.textFont = "monospace";
+  myButton.onPress = function(){
+   gamestate = "lvl4";
+}
 }
 
 function play3() {
@@ -299,33 +330,28 @@ image(pic3,45, 200);
   fill(255, 255, 255);
   textAlign(CENTER);
   textSize(25);
-  text('Draw what is shown below', width*0.5, height*0.2);
-  textSize(12);
-  text('Clear canvas each drawing by pressing "C"', width*0.5, height*0.35);
-  textSize(10);
-  text('You will only have 60 seconds per drawing', width*0.5, height*0.89);
+
 
   if (drawStart == false){
     background(255, 255, 255);
     drawStart = true;
   }
-
-  let currentTime = int(millis()/ 1000);
-  countDown = timeLimit - currentTime;
-  textSize(10);
-  text("TIMER: " + countDown, 100, 400);
-
-  if (countDown < 0){
-    countDown = 0;{
-      winloss();
-      gamestate = 'gameover';}
-    }
-  myButton.locate(-190, -350);
+  myButton.width = 90;
+  myButton.height = 70;
+  myButton.locate(380, 380);
+  myButton.text = "Skip";
+  myButton.color = "#00FF00";
+  myButton.textSize = 30;
+  myButton.textFont = "monospace";
+  myButton.onPress = function(){
+   gamestate = "gameover";
+}
 }
 
 
 function gameOver() {
-  background(goR, goG, goB);
+  fill(0,255,0);
+  rect(10, 20, 485, 475);
   textAlign(CENTER);
   noStroke();
   fill(245, 245, 220)
@@ -336,11 +362,9 @@ function gameOver() {
   stroke(255);
   fill(255);
   textSize(60);
-  text('Results!', width*0.5, height*0.23);
-  textSize(15);
-  text('How did you do?', width*0.5, height*0.35);
+  text('Results:', width*0.5, height*0.23);
   textSize(100);
-  text(goText, width * 0.5, height * 0.65)
+  text('You Can!', width*0.5, height*0.55);
   fill(0, 255, 0);
   ellipse(400, 480, 20, 20);
   fill(245, 245, 220);
@@ -348,21 +372,5 @@ function gameOver() {
   ellipse(450, 480, 30, 30);
   fill(58, 58, 58);
   ellipse(450, 480, 10, 15);
-}
-
-function winloss() {
-  let result = random(10);
-  console.log(result);
-  if (result < 5) {
-    goR = 0;
-    goG = 255;
-    goB = 0;
-    goFill = 255;
-    goText = 'You Can!'
-  } else if (result >=5 ) {
-    goR = 255;
-    goB = 0;
-    goG = 0;
-    goFill = 0;
-    goText = 'You Cant!';  }
+  myButton.locate(-380, -380);
 }
