@@ -9,5 +9,19 @@ assets that were easier to draw. Another task at is to add some challenge, uniqu
 to make the game feel modern. The whole subject of this game is for it be old-school, and retro. So keeping the layout simple isn't due to the lack of ability
 , but meant to serve as simple colors, shapes, and function.
 
+
+Day 1:
+ Finding out what I can change
+ 
+
+
+
+
+
+
+
+
+
+
 **License & Copyright**
 Alexander Jang - Digital Media Artist, Freelancer, Illustrator
