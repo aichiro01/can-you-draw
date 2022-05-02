@@ -102,42 +102,57 @@ function draw() {
 
 function titleScreen() {
   noStroke();
-  background(58, 58, 58);
-  fill(245, 245, 220)
-  strokeWeight(1);
-  rect(0, 0, 500, 40);
-  rect(0, 460, 500, 40);
-  rect(0, 0, 20, 500);
-  rect(480, 0, 20, 500);
-  stroke(255);
-  fill(255);
-  textSize(50);
-  textAlign(CENTER);
-  text('Can You Draw?', width*0.5, height*0.35);
+   fill(58, 58, 58);
+   rect(10, 20, 485, 475);
+   fill(245, 245, 220);
+   strokeWeight(1);
+   rect(0, 0, 500, 40, 20);
+   rect(0, 460, 500, 40, 20);
+   rect(0, 0, 20, 500, 20);
+   rect(480, 0, 20, 500, 20);
+   stroke(255);
+   fill(255);
+   textSize(50);
+   textAlign(CENTER);
+   text('Can you Draw?', width*0.5, height*0.35);
+   fill(0, 255, 0);
+   ellipse(400, 480, 20, 20);
+   fill(245, 245, 220);
+   stroke(1);
+   ellipse(450, 480, 30, 30);
+   fill(58, 58, 58);
+   ellipse(450, 480, 10, 15);
 }
 
 function play() {
 
   noStroke();
   fill(245, 245, 220)
-  rect(0, 0, 500, 40);
-  rect(0, 460, 500, 40);
-  rect(0, 0, 20, 500);
-  rect(480, 0, 20, 500);
+  rect(0, 0, 500, 40, 20);
+  rect(0, 460, 500, 40, 20);
+  rect(0, 0, 20, 500, 20);
+  rect(480, 0, 20, 500, 20);
   fill(58);
   rect(20, 40, 150, 420);
   rect(20, 40, 440, 150);
   rect(460, 40, 20, 420);
   rect(20, 430, 460, 30);
+  fill(0, 255, 0);
+  ellipse(400, 480, 20, 20);
+  fill(245, 245, 220);
+  stroke(1);
+  ellipse(450, 480, 30, 30);
+  fill(58, 58, 58);
+  ellipse(450, 480, 10, 15);
 
 image(pic0,45, 200);
 
   fill(255, 255, 255);
   textAlign(CENTER);
   textSize(25);
-  text('Draw what is shown below', width*0.5, height*0.2);
-  textSize(12);
-  text('Clear canvas each drawing by pressing "C"', width*0.5, height*0.35);
+  text('Can you Draw:', width*0.5, height*0.2);
+  textSize(20);
+  text('Hydrant', width*0.5, height*0.3);
   textSize(10);
   text('You will only have 60 seconds per drawing', width*0.5, height*0.89);
 
@@ -163,15 +178,22 @@ function play1() {
 
   noStroke();
   fill(245, 245, 220)
-  rect(0, 0, 500, 40);
-  rect(0, 460, 500, 40);
-  rect(0, 0, 20, 500);
-  rect(480, 0, 20, 500);
+  rect(0, 0, 500, 40, 20);
+  rect(0, 460, 500, 40, 20);
+  rect(0, 0, 20, 500, 20);
+  rect(480, 0, 20, 500, 20);
   fill(58);
   rect(20, 40, 150, 420);
   rect(20, 40, 440, 150);
   rect(460, 40, 20, 420);
   rect(20, 430, 460, 30);
+  fill(0, 255, 0);
+  ellipse(400, 480, 20, 20);
+  fill(245, 245, 220);
+  stroke(1);
+  ellipse(450, 480, 30, 30);
+  fill(58, 58, 58);
+  ellipse(450, 480, 10, 15);
 
 image(pic1,45, 200);
 
@@ -205,15 +227,23 @@ function play2() {
 
   noStroke();
   fill(245, 245, 220)
-  rect(0, 0, 500, 40);
-  rect(0, 460, 500, 40);
-  rect(0, 0, 20, 500);
-  rect(480, 0, 20, 500);
+  rect(0, 0, 500, 40, 20);
+  rect(0, 460, 500, 40, 20);
+  rect(0, 0, 20, 500, 20);
+  rect(480, 0, 20, 500, 20);
   fill(58);
   rect(20, 40, 150, 420);
   rect(20, 40, 440, 150);
   rect(460, 40, 20, 420);
   rect(20, 430, 460, 30);
+  fill(0, 255, 0);
+  ellipse(400, 480, 20, 20);
+  fill(245, 245, 220);
+  stroke(1);
+  ellipse(450, 480, 30, 30);
+  fill(58, 58, 58);
+  ellipse(450, 480, 10, 15);
+
 
 image(pic2,45, 200);
 
@@ -247,15 +277,22 @@ function play3() {
 
   noStroke();
   fill(245, 245, 220)
-  rect(0, 0, 500, 40);
-  rect(0, 460, 500, 40);
-  rect(0, 0, 20, 500);
-  rect(480, 0, 20, 500);
+  rect(0, 0, 500, 40, 20);
+  rect(0, 460, 500, 40, 20);
+  rect(0, 0, 20, 500, 20);
+  rect(480, 0, 20, 500, 20);
   fill(58);
   rect(20, 40, 150, 420);
   rect(20, 40, 440, 150);
   rect(460, 40, 20, 420);
   rect(20, 430, 460, 30);
+  fill(0, 255, 0);
+  ellipse(400, 480, 20, 20);
+  fill(245, 245, 220);
+  stroke(1);
+  ellipse(450, 480, 30, 30);
+  fill(58, 58, 58);
+  ellipse(450, 480, 10, 15);
 
 image(pic3,45, 200);
 
@@ -292,10 +329,10 @@ function gameOver() {
   textAlign(CENTER);
   noStroke();
   fill(245, 245, 220)
-  rect(0, 0, 500, 40);
-  rect(0, 460, 500, 40);
-  rect(0, 0, 20, 500);
-  rect(480, 0, 20, 500);
+  rect(0, 0, 500, 40, 20);
+  rect(0, 460, 500, 40, 20);
+  rect(0, 0, 20, 500, 20);
+  rect(480, 0, 20, 500, 20);
   stroke(255);
   fill(255);
   textSize(60);
@@ -304,6 +341,13 @@ function gameOver() {
   text('How did you do?', width*0.5, height*0.35);
   textSize(100);
   text(goText, width * 0.5, height * 0.65)
+  fill(0, 255, 0);
+  ellipse(400, 480, 20, 20);
+  fill(245, 245, 220);
+  stroke(1);
+  ellipse(450, 480, 30, 30);
+  fill(58, 58, 58);
+  ellipse(450, 480, 10, 15);
 }
 
 function winloss() {
