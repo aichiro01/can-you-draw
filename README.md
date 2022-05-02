@@ -11,9 +11,10 @@ to make the game feel modern. The whole subject of this game is for it be old-sc
 
 
 Day 1:
- Finding out what I can change
- 
+ Finding out what I can change, change the concept, change certain functions,
+ make it challenging, still keep it fun, but not too easy
 
+Day 2:
 
 
 
