@@ -139,14 +139,18 @@ function intro() {
    rect(480, 0, 20, 500, 20);
    stroke(255);
    fill(255);
-
-   textSize(35);
    textAlign(CENTER);
+   textSize(35);
    text('Info:', width*0.5, height*0.18);
-
-
-
-
+   textSize(20);
+   textSize(22);
+   text('Replicate each image to the best of your ability', width*0.5, height*0.3);
+   text('You can only do it in one line', width*0.5, height*0.4);
+   text('Clear canvas per drawing', width*0.5, height*0.5);
+   textSize(35);
+   text('Controls:', width*0.5, height*0.65);
+   textSize(22);
+   text('Press "c" to clear canvas', width*0.5, height*0.75);
    fill(0, 255, 0);
    ellipse(400, 480, 20, 20);
    fill(245, 245, 220);
@@ -154,11 +158,10 @@ function intro() {
    ellipse(450, 480, 30, 30);
    fill(58, 58, 58);
    ellipse(450, 480, 10, 15);
-
    myButton.width = 90;
    myButton.height = 70;
    myButton.locate(380, 380);
-   myButton.text = "Skip";
+   myButton.text = "Next";
    myButton.color = "#00FF00";
    myButton.textSize = 30;
    myButton.textFont = "monospace";
@@ -176,10 +179,10 @@ function play() {
   rect(0, 0, 20, 500, 20);
   rect(480, 0, 20, 500, 20);
   fill(58);
-  rect(20, 40, 150, 420);
+  rect(20, 40, 200, 420);
   rect(20, 40, 440, 150);
   rect(460, 40, 20, 420);
-  rect(20, 430, 460, 30);
+  rect(20, 372, 460, 90);
   fill(0, 255, 0);
   ellipse(400, 480, 20, 20);
   fill(245, 245, 220);
@@ -188,14 +191,14 @@ function play() {
   fill(58, 58, 58);
   ellipse(450, 480, 10, 15);
 
-image(pic0,45, 200);
+  image(pic0,45, 197);
 
   fill(255, 255, 255);
   textAlign(CENTER);
   textSize(25);
   text('Can you Draw:', width*0.5, height*0.2);
   textSize(20);
-  text('Hydrant', width*0.5, height*0.3);
+  text('Tree', width*0.5, height*0.3);
 
   if (drawStart == false){
     background(255,255,255);
@@ -204,7 +207,7 @@ image(pic0,45, 200);
   myButton.width = 90;
   myButton.height = 70;
   myButton.locate(380, 380);
-  myButton.text = "Skip";
+  myButton.text = "Lvl2";
   myButton.color = "#00FF00";
   myButton.textSize = 30;
   myButton.textFont = "monospace";
@@ -223,10 +226,10 @@ function play1() {
   rect(0, 0, 20, 500, 20);
   rect(480, 0, 20, 500, 20);
   fill(58);
-  rect(20, 40, 150, 420);
+  rect(20, 40, 200, 420);
   rect(20, 40, 440, 150);
   rect(460, 40, 20, 420);
-  rect(20, 430, 460, 30);
+  rect(20, 372, 460, 90);
   fill(0, 255, 0);
   ellipse(400, 480, 20, 20);
   fill(245, 245, 220);
@@ -235,12 +238,14 @@ function play1() {
   fill(58, 58, 58);
   ellipse(450, 480, 10, 15);
 
-image(pic1,45, 200);
+  image(pic0,45, 197);
 
   fill(255, 255, 255);
   textAlign(CENTER);
   textSize(25);
-
+  text('Can you Draw:', width*0.5, height*0.2);
+  textSize(20);
+  text('Fish', width*0.5, height*0.3);
 
   if (drawStart == false){
     background(255, 255, 255);
@@ -250,7 +255,7 @@ image(pic1,45, 200);
   myButton.width = 90;
   myButton.height = 70;
   myButton.locate(380, 380);
-  myButton.text = "Skip";
+  myButton.text = "Lvl3";
   myButton.color = "#00FF00";
   myButton.textSize = 30;
   myButton.textFont = "monospace";
@@ -268,10 +273,10 @@ function play2() {
   rect(0, 0, 20, 500, 20);
   rect(480, 0, 20, 500, 20);
   fill(58);
-  rect(20, 40, 150, 420);
+  rect(20, 40, 200, 420);
   rect(20, 40, 440, 150);
   rect(460, 40, 20, 420);
-  rect(20, 430, 460, 30);
+  rect(20, 372, 460, 90);
   fill(0, 255, 0);
   ellipse(400, 480, 20, 20);
   fill(245, 245, 220);
@@ -280,12 +285,14 @@ function play2() {
   fill(58, 58, 58);
   ellipse(450, 480, 10, 15);
 
-
-image(pic2,45, 200);
+  image(pic0,45, 197);
 
   fill(255, 255, 255);
   textAlign(CENTER);
   textSize(25);
+  text('Can you Draw:', width*0.5, height*0.2);
+  textSize(20);
+  text('Lolipop', width*0.5, height*0.3);
 
 
   if (drawStart == false){
@@ -295,7 +302,7 @@ image(pic2,45, 200);
   myButton.width = 90;
   myButton.height = 70;
   myButton.locate(380, 380);
-  myButton.text = "Skip";
+  myButton.text = "Lvl4";
   myButton.color = "#00FF00";
   myButton.textSize = 30;
   myButton.textFont = "monospace";
@@ -313,10 +320,10 @@ function play3() {
   rect(0, 0, 20, 500, 20);
   rect(480, 0, 20, 500, 20);
   fill(58);
-  rect(20, 40, 150, 420);
+  rect(20, 40, 200, 420);
   rect(20, 40, 440, 150);
   rect(460, 40, 20, 420);
-  rect(20, 430, 460, 30);
+  rect(20, 372, 460, 90);
   fill(0, 255, 0);
   ellipse(400, 480, 20, 20);
   fill(245, 245, 220);
@@ -325,11 +332,14 @@ function play3() {
   fill(58, 58, 58);
   ellipse(450, 480, 10, 15);
 
-image(pic3,45, 200);
+  image(pic0,45, 197);
 
   fill(255, 255, 255);
   textAlign(CENTER);
   textSize(25);
+  text('Can you Draw:', width*0.5, height*0.2);
+  textSize(20);
+  text('Spider', width*0.5, height*0.3);
 
 
   if (drawStart == false){
@@ -339,7 +349,7 @@ image(pic3,45, 200);
   myButton.width = 90;
   myButton.height = 70;
   myButton.locate(380, 380);
-  myButton.text = "Skip";
+  myButton.text = "End";
   myButton.color = "#00FF00";
   myButton.textSize = 30;
   myButton.textFont = "monospace";

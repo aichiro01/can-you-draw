@@ -14,7 +14,8 @@ Day 1:
  Finding out what I can change, change the concept, change certain functions,
  make it challenging, still keep it fun, but not too easy
 
-Day 2:
+Day 2: Figuring out what controls to add for the game along with changing up the
+layout for the play screens.
 
 
 
