@@ -439,7 +439,7 @@ function play5() {
   textSize(25);
   text('Can you Draw:', width*0.5, height*0.2);
   textSize(20);
-  text('Guitar', width*0.5, height*0.3);
+  text('Head', width*0.5, height*0.3);
 
 
   if (drawStart == false){
@@ -486,7 +486,7 @@ function play6() {
   textSize(25);
   text('Can you Draw:', width*0.5, height*0.2);
   textSize(20);
-  text('Head', width*0.5, height*0.3);
+  text('', width*0.5, height*0.3);
 
 
   if (drawStart == false){
