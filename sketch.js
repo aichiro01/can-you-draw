@@ -88,6 +88,12 @@ function draw() {
       case"lvl5":
       play4();
       break;
+      case"lvl6":
+      play5();
+      break;
+      case"lvl7":
+      play6();
+      break;
       case 'gameover':
       gameOver();
   }
@@ -349,6 +355,147 @@ function play3() {
   myButton.width = 90;
   myButton.height = 70;
   myButton.locate(380, 380);
+  myButton.text = "lvl5";
+  myButton.color = "#00FF00";
+  myButton.textSize = 30;
+  myButton.textFont = "monospace";
+  myButton.onPress = function(){
+   gamestate = "lvl5";
+}
+}
+
+function play4() {
+
+  noStroke();
+  fill(245, 245, 220)
+  rect(0, 0, 500, 40, 20);
+  rect(0, 460, 500, 40, 20);
+  rect(0, 0, 20, 500, 20);
+  rect(480, 0, 20, 500, 20);
+  fill(58);
+  rect(20, 40, 200, 420);
+  rect(20, 40, 440, 150);
+  rect(460, 40, 20, 420);
+  rect(20, 372, 460, 90);
+  fill(0, 255, 0);
+  ellipse(400, 480, 20, 20);
+  fill(245, 245, 220);
+  stroke(1);
+  ellipse(450, 480, 30, 30);
+  fill(58, 58, 58);
+  ellipse(450, 480, 10, 15);
+
+  image(pic0,45, 197);
+
+  fill(255, 255, 255);
+  textAlign(CENTER);
+  textSize(25);
+  text('Can you Draw:', width*0.5, height*0.2);
+  textSize(20);
+  text('Tree', width*0.5, height*0.3);
+
+
+  if (drawStart == false){
+    background(255, 255, 255);
+    drawStart = true;
+  }
+  myButton.width = 90;
+  myButton.height = 70;
+  myButton.locate(380, 380);
+  myButton.text = "lvl6";
+  myButton.color = "#00FF00";
+  myButton.textSize = 30;
+  myButton.textFont = "monospace";
+  myButton.onPress = function(){
+   gamestate = "lvl6";
+}
+}
+
+function play5() {
+
+  noStroke();
+  fill(245, 245, 220)
+  rect(0, 0, 500, 40, 20);
+  rect(0, 460, 500, 40, 20);
+  rect(0, 0, 20, 500, 20);
+  rect(480, 0, 20, 500, 20);
+  fill(58);
+  rect(20, 40, 200, 420);
+  rect(20, 40, 440, 150);
+  rect(460, 40, 20, 420);
+  rect(20, 372, 460, 90);
+  fill(0, 255, 0);
+  ellipse(400, 480, 20, 20);
+  fill(245, 245, 220);
+  stroke(1);
+  ellipse(450, 480, 30, 30);
+  fill(58, 58, 58);
+  ellipse(450, 480, 10, 15);
+
+  image(pic0,45, 197);
+
+  fill(255, 255, 255);
+  textAlign(CENTER);
+  textSize(25);
+  text('Can you Draw:', width*0.5, height*0.2);
+  textSize(20);
+  text('Guitar', width*0.5, height*0.3);
+
+
+  if (drawStart == false){
+    background(255, 255, 255);
+    drawStart = true;
+  }
+  myButton.width = 90;
+  myButton.height = 70;
+  myButton.locate(380, 380);
+  myButton.text = "lvl7";
+  myButton.color = "#00FF00";
+  myButton.textSize = 30;
+  myButton.textFont = "monospace";
+  myButton.onPress = function(){
+   gamestate = "lvl7";
+}
+}
+
+function play6() {
+
+  noStroke();
+  fill(245, 245, 220)
+  rect(0, 0, 500, 40, 20);
+  rect(0, 460, 500, 40, 20);
+  rect(0, 0, 20, 500, 20);
+  rect(480, 0, 20, 500, 20);
+  fill(58);
+  rect(20, 40, 200, 420);
+  rect(20, 40, 440, 150);
+  rect(460, 40, 20, 420);
+  rect(20, 372, 460, 90);
+  fill(0, 255, 0);
+  ellipse(400, 480, 20, 20);
+  fill(245, 245, 220);
+  stroke(1);
+  ellipse(450, 480, 30, 30);
+  fill(58, 58, 58);
+  ellipse(450, 480, 10, 15);
+
+  image(pic0,45, 197);
+
+  fill(255, 255, 255);
+  textAlign(CENTER);
+  textSize(25);
+  text('Can you Draw:', width*0.5, height*0.2);
+  textSize(20);
+  text('Head', width*0.5, height*0.3);
+
+
+  if (drawStart == false){
+    background(255, 255, 255);
+    drawStart = true;
+  }
+  myButton.width = 90;
+  myButton.height = 70;
+  myButton.locate(380, 380);
   myButton.text = "End";
   myButton.color = "#00FF00";
   myButton.textSize = 30;
@@ -357,8 +504,6 @@ function play3() {
    gamestate = "gameover";
 }
 }
-
-
 function gameOver() {
   fill(0,255,0);
   rect(10, 20, 485, 475);
