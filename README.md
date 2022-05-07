@@ -17,6 +17,10 @@ Day 1:
 Day 2: Figuring out what controls to add for the game along with changing up the
 layout for the play screens.
 
+Day 3: Adding and recoding new levels and adding them within my game statement.
+Also creating a escalation in difficulty for each level. As the user progresses the
+the drawings get harder to recreate.
+
 
 
 
