@@ -1,17 +1,9 @@
 html, body {
   margin: 0;
-  background:url(
-data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAAXNSR0IArs4c6QAAACBJREFUGFdjZGBg+M/AwMDIgAYwBGDyREvAjSVaB9wJAM+bAgclldMqAAAAAElFTkSuQmCC
-   ) repeat;
+  padding: 0;
+  background-color: lightblue;
 }
-
 canvas {
   display: block;
-  margin: auto;
-  padding: 50px;
-
-}
-
-titleScreen{
-  font-family: monospace;
+  margin:auto;
 }
