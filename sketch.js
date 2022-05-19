@@ -1,5 +1,30 @@
 let gamestate = "title";
 
+let pic0;
+
+let pic1;
+
+let pic2;
+
+let pic3;
+
+let pic4;
+
+let pic5;
+
+let pic6;
+
+
+
+function preload(){
+  pic0 = loadImage('assets/0.png');
+  pic1 = loadImage('assets/1.png');
+  pic2 = loadImage('assets/2.png');
+  pic3 = loadImage('assets/3.png');
+  pic4 = loadImage('assets/4.png');
+  pic5 = loadImage('assets/5.png');
+  pic6 = loadImage('assets/6.png');
+}
 
 function setup() {
   createCanvas(800, 800);
@@ -165,6 +190,11 @@ function play(){
   rect(0, 760, 800, 40);
   rect(0, 0, 20, 800);
   rect(780, 0, 20, 800);
+
+  fill(255);
+  rect(305, 145, 200, 180);
+  image(pic0,width*0.45, height*.182);
+
   textSize(40);
   textAlign(CENTER);
   text('Dell', width*0.5, height*.99);
@@ -207,6 +237,11 @@ function play1() {
   rect(0, 760, 800, 40);
   rect(0, 0, 20, 800);
   rect(780, 0, 20, 800);
+
+  fill(255);
+  rect(305, 145, 200, 180);
+  image(pic1,width*0.45, height*.25);
+
   textSize(40);
   textAlign(CENTER);
   text('Dell', width*0.5, height*.99);
@@ -252,6 +287,11 @@ function play2() {
   rect(0, 760, 800, 40);
   rect(0, 0, 20, 800);
   rect(780, 0, 20, 800);
+
+  fill(255);
+  rect(305, 145, 200, 180);
+  image(pic2,width*0.462, height*.22);
+
   textSize(40);
   textAlign(CENTER);
   text('Dell', width*0.5, height*.99);
@@ -297,6 +337,11 @@ function play3() {
   rect(0, 760, 800, 40);
   rect(0, 0, 20, 800);
   rect(780, 0, 20, 800);
+
+  fill(255);
+  rect(305, 145, 200, 180);
+  image(pic3,width*0.43, height*.182);
+
   textSize(40);
   textAlign(CENTER);
   text('Dell', width*0.5, height*.99);
@@ -341,6 +386,11 @@ function play4() {
   rect(0, 760, 800, 40);
   rect(0, 0, 20, 800);
   rect(780, 0, 20, 800);
+
+  fill(255);
+  rect(305, 145, 200, 180);
+  image(pic4,width*0.43, height*.21);
+
   textSize(40);
   textAlign(CENTER);
   text('Dell', width*0.5, height*.99);
@@ -383,6 +433,11 @@ function play5() {
   rect(0, 760, 800, 40);
   rect(0, 0, 20, 800);
   rect(780, 0, 20, 800);
+
+  fill(255);
+  rect(305, 145, 200, 180);
+  image(pic5,width*0.43, height*.224);
+
   textSize(40);
   textAlign(CENTER);
   text('Dell', width*0.5, height*.99);
@@ -427,6 +482,11 @@ function play6() {
   rect(0, 760, 800, 40);
   rect(0, 0, 20, 800);
   rect(780, 0, 20, 800);
+
+  fill(255);
+  rect(305, 145, 200, 180);
+  image(pic6,width*0.413, height*.256);
+
   textSize(40);
   textAlign(CENTER);
   text('Dell', width*0.5, height*.99);
@@ -458,7 +518,7 @@ function play6() {
 
 function gameOver() {
   noStroke();
-  fill(0,255,0);
+  fill(255,0,0);
   rect(0, 0, 800, 800);
   textAlign(CENTER);
   noStroke();
@@ -473,7 +533,8 @@ function gameOver() {
   textSize(60);
   text('Results:', width*0.5, height*0.23);
   textSize(100);
-  text('You Can!', width*0.5, height*0.55);
+  text('Ummmm...', width*0.5, height*0.55);
+  text('Try Again?', width*0.5, height*0.74);
   fill(245, 300, 220);
   textSize(40);
   textAlign(CENTER);
