@@ -10,6 +10,8 @@ to make the game feel modern. The whole subject of this game is for it be old-sc
 , but meant to serve as simple colors, shapes, and function.
 
 
+A Process:
+
 Day 1:
  Finding out what I can change, change the concept, change certain functions,
  make it challenging, still keep it fun, but not too easy
