@@ -21,6 +21,11 @@ Day 3: Adding and recoding new levels and adding them within my game statement.
 Also creating a escalation in difficulty for each level. As the user progresses the
 the drawings get harder to recreate.
 
+Day 4:
+Created assets and implementing them within my code. Making sure that they're cropped
+and proportional within the space. Ensuring the assets are drawable for the user using 
+just one line. Keeping things simple and clean.
+
 
 
 
